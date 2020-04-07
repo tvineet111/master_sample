@@ -37,12 +37,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             tv.append("\n"+deviceSensors.get(i).getName()+"\n"+deviceSensors.get(i).getVendor());
         }
 
-
         light_btn.setOnClickListener(this);
         accelerometer_btn.setOnClickListener(this);
         proximity_btn.setOnClickListener(this);
         gyroscope_btn.setOnClickListener(this);
 
+        // pagination code put here
 
     }
 
@@ -70,4 +70,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
 }
