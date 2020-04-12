@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         accelerometer_btn = findViewById(R.id.accelerometer_btn);
         proximity_btn = findViewById(R.id.proximity_btn);
         gyroscope_btn = findViewById(R.id.gyroscope_btn);
-
+//lets have some conflicts
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 // added code by vinay
         List<Sensor> deviceSensors = mSensorManager.getSensorList(Sensor.TYPE_ALL);
