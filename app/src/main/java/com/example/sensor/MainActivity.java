@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         gyroscope_btn = findViewById(R.id.gyroscope_btn);
 
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-
+// added code by vinay
         List<Sensor> deviceSensors = mSensorManager.getSensorList(Sensor.TYPE_ALL);
         for(int i=0; i<deviceSensors.size(); i++){
             tv.append("\n"+deviceSensors.get(i).getName()+"\n"+deviceSensors.get(i).getVendor());
